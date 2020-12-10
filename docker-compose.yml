@@ -1,0 +1,14 @@
+version: "3"
+services:
+  website:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: zhaopan/mdblog
+    container_name: mdblog
+    restart: always
+    ports:
+      - "80:8091"
+    environment:
+      - DOMAIN=blog.fkwar.com
+    command: /bin/sh /server.sh
