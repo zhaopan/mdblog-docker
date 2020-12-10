@@ -10,5 +10,5 @@ services:
     ports:
       - "80:8091"
     environment:
-      - DOMAIN=blog.fkwar.com
+      - DOMAIN=<blog.website.com>
     command: /bin/sh /server.sh
