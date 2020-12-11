@@ -9,6 +9,8 @@ services:
     restart: always
     ports:
       - "80:8091"
+#    volumes:
+#      - /docker/blog-docs:/app/resources/blog-docs
     environment:
       - DOMAIN=<blog.website.com>
     command: /bin/sh /server.sh
